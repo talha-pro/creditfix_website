@@ -1,0 +1,57 @@
+.choose-card {
+  margin: 0rem 3rem;
+  height: 30rem;
+  width: 30rem;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (min-width: 320px) and (max-width: 400px) {
+    margin-left: 2rem;
+    height: 28rem;
+    width: 28rem;
+  }
+
+  @media (min-width: 400px) and (max-width: 492px) {
+    margin-left: 7rem;
+  }
+
+  @media (min-width: 492px) and (max-width: 530px) {
+    margin-left: 10rem;
+  }
+
+  @media (min-width: 530px) and (max-width: 768px) {
+    margin-left: 12rem;
+  }
+
+  &__image {
+    min-height: 20rem;
+    width: 20rem;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 2rem;
+  }
+
+  &__title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  &__text {
+    height: 10rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+    @media (min-width: 320px) and (max-width: 400px) {
+      font-size: 1.4rem;
+    }
+  }
+}

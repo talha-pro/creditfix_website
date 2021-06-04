@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html,
+body {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif !important;
+  box-sizing: border-box;
+}
+
+.space-1 {
+  height: 1rem;
+  width: 100%;
+}
+
+.space-2 {
+  height: 2rem;
+  width: 100%;
+}
+
+.space-3 {
+  height: 3rem;
+  width: 100%;
+}
+
+.space-4 {
+  height: 4rem;
+  width: 100%;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: auto;
+  width: 200rem;
+  opacity: 0.08;
+}

@@ -1,0 +1,26 @@
+.button {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0rem;
+  width: max-content;
+  height: 4rem;
+  padding: 1rem 3rem;
+  color: white;
+  border: none;
+  border-radius: 5rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  background-color: $secondary;
+  box-shadow: 0 3px 6px rgba($secondary, 0.16), 0 3px 6px rgba($secondary, 0.23);
+
+  &:hover {
+    transition: all 0.2s ease;
+    background-color: $primary-high;
+    box-shadow: 6px 6px 25px 0px rgba(0, 217, 166, 0.35);
+    transform: scale(1.05);
+  }
+}

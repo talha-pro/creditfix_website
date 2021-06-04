@@ -1,0 +1,37 @@
+.employee-card {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+  margin-right: 1rem;
+  width: 50%;
+
+  &__image {
+    height: 10rem !important;
+    width: 10rem !important;
+    margin-bottom: 1rem;
+  }
+
+  &__title-wrapper {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #000000;
+    text-align: center;
+  }
+
+  &__text {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #000000;
+    line-height: 2.2rem;
+  }
+}

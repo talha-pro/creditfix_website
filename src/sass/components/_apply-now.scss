@@ -1,0 +1,121 @@
+.apply {
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+
+  @media (min-width: 768px) and (max-width: 992px) {
+    height: 40rem;
+  }
+
+  &__wrapper {
+    position: relative;
+    height: auto;
+    width: 100%;
+    border-radius: 5rem;
+    overflow: hidden;
+
+    @media (min-width: 320px) and (max-width: 400px) {
+      border-radius: 2rem;
+    }
+
+    -webkit-box-shadow: 0px 3px 22px 10px rgba(0, 0, 0, 0.17);
+    -moz-box-shadow: 0px 3px 22px 10px rgba(0, 0, 0, 0.17);
+    box-shadow: 0px 3px 22px 10px rgba(0, 0, 0, 0.17);
+
+    @media (min-width: 768px) {
+      height: 40rem;
+    }
+  }
+
+  &__apply-video {
+    border-radius: 5rem;
+    z-index: 100;
+    height: auto;
+    width: 100%;
+
+    @media (min-width: 320px) and (max-width: 400px) {
+      border-radius: 2rem;
+    }
+  }
+
+  &__video-overlay {
+    border-radius: 5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 101;
+    background-image: linear-gradient(
+      135deg,
+      $secondary 0%,
+      $primary-high 100%
+    );
+    opacity: 0.9;
+    height: 100%;
+    width: 100%;
+
+    @media (min-width: 320px) and (max-width: 400px) {
+      border-radius: 2rem;
+    }
+  }
+
+  &__wrapper-sec {
+    z-index: 102;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__title {
+    font-size: 5.6rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 2rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    text-align: center;
+
+    @media (min-width: 320px) and (max-width: 400px) {
+      font-size: 2rem;
+    }
+
+    @media (min-width: 400px) and (max-width: 576px) {
+      font-size: 2.6rem;
+    }
+
+    @media (min-width: 576px) and (max-width: 768px) {
+      font-size: 3rem;
+    }
+
+    @media (min-width: 768px) and (max-width: 992px) {
+      font-size: 4.6rem;
+    }
+  }
+
+  &__text {
+    font-size: 3.6rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 2rem;
+    text-align: center;
+
+    @media (min-width: 320px) and (max-width: 400px) {
+      font-size: 1.4rem;
+    }
+
+    @media (min-width: 400px) and (max-width: 576px) {
+      font-size: 2rem;
+    }
+
+    @media (min-width: 576px) and (max-width: 768px) {
+      font-size: 2.6rem;
+    }
+  }
+}

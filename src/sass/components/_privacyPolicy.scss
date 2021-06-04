@@ -1,0 +1,33 @@
+.privacy {
+  &__header {
+    height: 6rem;
+    background-image: linear-gradient(
+      135deg,
+      $secondary 0%,
+      $primary-high 100%
+    );
+  }
+
+  &__container {
+    margin: 5rem;
+
+    @media (min-width: 320px) and (max-width: 992px) {
+      margin: 2rem 2rem -5rem 2rem;
+    }
+  }
+
+  &__heading {
+    font-size: 2.7rem;
+    color: $primary-high;
+    margin-bottom: 2rem;
+
+    @media (min-width: 320px) and (max-width: 992px) {
+      font-size: 2rem;
+    }
+  }
+
+  &__text {
+    font-size: 1.4rem;
+    color: black;
+  }
+}

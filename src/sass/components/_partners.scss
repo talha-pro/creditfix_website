@@ -1,0 +1,30 @@
+.partners {
+  position: relative;
+  height: 50rem;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10rem;
+
+  &__col-upper {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__col-lower {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__heading {
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-bottom: 5rem;
+    color: $secondary;
+  }
+}

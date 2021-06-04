@@ -1,0 +1,334 @@
+.header {
+  height: 90rem;
+  background-color: $secondary;
+  z-index: 1000 !important;
+  position: relative;
+  overflow: hidden;
+
+  @media (min-width: 320px) and (max-width: 400px) {
+    margin-bottom: 0rem;
+    height: max-content;
+    padding-top: 5rem;
+  }
+
+  @media (min-width: 400px) and (max-width: 576px) {
+    margin-bottom: 0rem;
+    height: max-content;
+    padding-top: 5rem;
+  }
+
+  @media (min-width: 576px) and (max-width: 768px) {
+    margin-bottom: 0rem;
+    height: max-content;
+    padding-top: 5rem;
+  }
+
+  @media (min-width: 768px) and (max-width: 992px) {
+    margin-bottom: 0rem;
+    height: max-content;
+    padding-top: 5rem;
+  }
+
+  @media (min-width: 992px) and (max-width: 1200px) {
+    height: 75rem;
+    margin-bottom: 0rem;
+  }
+
+  @media (min-width: 1200px) and (max-width: 1316px) {
+    height: 80rem;
+    margin-bottom: 0rem;
+  }
+
+  &__logo {
+    @media (min-width: 320px) and (max-width: 992px) {
+      margin-top: -3.5rem;
+      height: auto;
+      width: 8rem;
+      background-size: cover !important;
+    }
+  }
+
+  &__business-button-wrapper {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  &__business-button {
+    @media (min-width: 992px) {
+      display: none !important;
+    }
+  }
+
+  &__video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 101;
+    background-image: linear-gradient(
+      135deg,
+      $secondary 0%,
+      $primary-high 100%
+    );
+    opacity: 0.9;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__header-video {
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 100 !important;
+    height: auto;
+    width: 100vw;
+
+    @media (max-width: 992px) {
+      display: none !important;
+    }
+  }
+
+  &__wave-one {
+    position: absolute;
+    bottom: -1rem;
+    z-index: 500;
+    width: 100vw;
+
+    @media (min-width: 320px) and (max-width: 400px) {
+      bottom: -1rem;
+    }
+
+    @media (min-width: 400px) and (max-width: 576px) {
+      bottom: -1rem;
+    }
+
+    @media (min-width: 576px) and (max-width: 768px) {
+      bottom: -1rem;
+    }
+
+    @media (min-width: 768px) and (max-width: 992px) {
+      bottom: -1rem;
+    }
+
+    @media (min-width: 992px) and (max-width: 1200px) {
+      bottom: -1rem;
+    }
+
+    @media (min-width: 1200px) and (max-width: 1316px) {
+      bottom: -1rem;
+    }
+  }
+
+  &__wave-two {
+    position: absolute;
+    bottom: 0rem;
+    width: 100vw;
+    transform: rotate(2deg);
+    z-index: 400;
+
+    @media (min-width: 320px) and (max-width: 400px) {
+      bottom: 0rem;
+    }
+
+    @media (min-width: 400px) and (max-width: 576px) {
+      bottom: 0rem;
+    }
+
+    @media (min-width: 576px) and (max-width: 768px) {
+      bottom: 0rem;
+    }
+
+    @media (min-width: 768px) and (max-width: 992px) {
+      bottom: 0rem;
+    }
+
+    @media (min-width: 992px) and (max-width: 1200px) {
+      bottom: 0rem;
+    }
+
+    @media (min-width: 1200px) and (max-width: 1316px) {
+      bottom: 0rem;
+    }
+  }
+
+  &__wave-three {
+    position: absolute;
+    bottom: 0rem;
+    transform: rotate(2deg);
+    width: 100vw;
+    z-index: 400;
+
+    @media (min-width: 320px) and (max-width: 400px) {
+      bottom: 0rem;
+    }
+
+    @media (min-width: 400px) and (max-width: 576px) {
+      bottom: 0rem;
+    }
+
+    @media (min-width: 576px) and (max-width: 768px) {
+      bottom: 0rem;
+    }
+
+    @media (min-width: 768px) and (max-width: 992px) {
+      bottom: 0rem;
+    }
+
+    @media (min-width: 992px) and (max-width: 1200px) {
+      bottom: 0rem;
+    }
+
+    @media (min-width: 1200px) and (max-width: 1316px) {
+      bottom: 0rem;
+    }
+  }
+
+  &__col-left {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-bottom: 10rem;
+    width: auto;
+    z-index: 600;
+
+    @media (min-width: 992px) and (max-width: 1200px) {
+      padding-bottom: 0rem;
+    }
+
+    @media (min-width: 1200px) and (max-width: 1316px) {
+      height: 80rem;
+    }
+  }
+
+  &__col-right {
+    position: relative;
+    z-index: 600;
+  }
+
+  &__mobile {
+    z-index: 700;
+    position: absolute;
+    height: auto;
+    width: 45rem;
+    top: 5rem;
+    right: 5rem;
+    transform: rotate(6deg);
+    overflow: visible;
+
+    @media (min-width: 320px) and (max-width: 400px) {
+      width: 28rem;
+      top: -5rem;
+      right: -5rem;
+    }
+
+    @media (min-width: 400px) and (max-width: 489px) {
+      width: 35rem;
+      top: -10rem;
+      right: -7rem;
+    }
+
+    @media (min-width: 489px) and (max-width: 576px) {
+      width: 35rem;
+      top: -10rem;
+      right: -12rem;
+    }
+
+    @media (min-width: 576px) and (max-width: 768px) {
+      top: -10rem;
+      right: -12rem;
+    }
+
+    @media (min-width: 768px) and (max-width: 992px) {
+      top: -10rem;
+      right: -20rem;
+    }
+
+    @media (min-width: 992px) and (max-width: 1200px) {
+      width: 40rem;
+      top: 5rem;
+      right: 3%;
+    }
+
+    @media (min-width: 1200px) and (max-width: 1316px) {
+      top: 5rem;
+      right: 3%;
+    }
+
+    @media (min-width: 1316px) and (max-width: 1550px) {
+      top: 15%;
+    }
+  }
+
+  &__title-wrapper {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  &__title {
+    font-size: 5.6rem;
+    font-weight: 900;
+    color: #f1fcf5;
+
+    @media (min-width: 320px) and (max-width: 400px) {
+      font-size: 3.6rem;
+    }
+  }
+
+  .text-typing {
+    color: $primary-high;
+    font-size: 5.6rem;
+    font-weight: 900;
+    @media (min-width: 320px) and (max-width: 400px) {
+      font-size: 3.6rem;
+    }
+  }
+
+  .text-typing p {
+    margin: 0px;
+    white-space: nowrap;
+    padding-right: 2rem;
+    overflow: hidden;
+    animation: typing 10s steps(300, end) forwards, blink 0.8s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s !important;
+  }
+
+  @keyframes typing {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+
+  @keyframes blink {
+    0%,
+    100% {
+      padding-right: 3.5rem;
+      border-right: 2px solid transparent;
+    }
+    50% {
+      padding-right: 3rem;
+      border-right: 0.5rem solid #f1fcf5;
+    }
+  }
+
+  &__tag-line {
+    margin-top: 2rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #f1fcf5;
+
+    @media (min-width: 320px) and (max-width: 400px) {
+      font-size: 1.4rem;
+    }
+  }
+}

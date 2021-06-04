@@ -1,0 +1,9 @@
+.company {
+  height: 100vh;
+
+  &__about-us {
+    border: 1px solid red;
+    border-radius: 3em;
+    padding: 5rem;
+  }
+}
